@@ -7,7 +7,7 @@ import (
 func (pattern *Pattern) String() string {
 	output := fmt.Sprintf("Saved with HW Version: %s\nTempo: %g\n", pattern.Version, pattern.Tempo)
 	for _, track := range pattern.Tracks {
-		output += fmt.Sprint(track)
+		output += fmt.Sprintf("%s\n", track)
 	}
 
 	return output
